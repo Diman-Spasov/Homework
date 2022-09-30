@@ -1,0 +1,99 @@
+#include <stdio.h>
+#include <limits.h>
+#include <stdbool.h>
+#include <string.h>
+int main()
+{
+    int productCountYogurt = 0;
+    int productCountIcecream = 0;
+    int productCountLolipop = 0;
+    int finalPrice = 0;
+    int product = 0;
+    int productCountKgTomatoes = 0;
+    int productCountKgFlour = 0;
+    int productCountKgCandy = 0;
+    float tomatoes = 4.50;
+    float flour = 1.80;
+    float yogurt = 0.50;
+    float icecream = 0.60;
+    float candy = 1.50;
+    float lolipop = 0.15;
+    float totalSumTomatoes = 0;
+    float totalSumFlour = 0;
+    float totalSumCandy = 0;
+    float totalSumYogurt = 0;
+    float totalSumIcecream = 0;
+    float totalSumLolipop = 0;
+    float totalSum = 0;
+    
+
+    printf("Enter one product number: \n tamatoes (1); \n flower (2); \n yogurt (3); \n icecream (4); \n candy (5); \n lolipop (6) \n Enter: '0' to see your total! ");
+    scanf("%d", &product);
+
+    
+    if(product == 1)
+    {
+        printf("Enter quantity in KG: ");
+        scanf("%d", &productCountKgTomatoes);
+        
+        totalSumTomatoes = tomatoes * productCountKgTomatoes;
+        printf("Enter one product number: \n tamatoes (1); \n flour (2); \n yogurt (3); \n icecream (4); \n candy (5); \n lolipop (6) \n Enter: '0' to see your total! ");
+        scanf("%d", &product);
+    }
+    
+    if(product == 2)
+    {
+        printf("Enter quantity in KG: ");
+        scanf("%d", &productCountKgFlour);
+        
+        totalSumFlour = flour * productCountKgFlour;
+        printf("Enter one product number: \n tamatoes (1); \n flour (2); \n yogurt (3); \n icecream (4); \n candy (5); \n lolipop (6) \n Enter: '0' to see your total! ");
+        scanf("%d", &product);
+    }
+
+    if(product == 5)
+    {
+        printf("Enter quantity in KG: ");
+        scanf("%d", &productCountKgCandy);
+        
+        totalSumCandy = candy * productCountKgCandy;
+        printf("Enter one product number: \n tamatoes (1); \n flour (2); \n yogurt (3); \n icecream (4); \n candy (5); \n lolipop (6) \n Enter: '0' to see your total! ");
+        scanf("%d", &product);
+    }
+    
+    if(product == 3)
+    {
+        printf("Enter quantity: ");
+        scanf("%d", &productCountYogurt);
+        
+        totalSumYogurt = yogurt * productCountYogurt;
+        printf("Enter one product number: \n tamatoes (1); \n flour (2); \n yogurt (3); \n icecream (4); \n candy (5); \n lolipop (6) \n Enter: '0' to see your total! ");
+        scanf("%d", &product);
+    }
+
+    if(product == 4)
+    {
+        printf("Enter quantity: ");
+        scanf("%d", &productCountIcecream);
+        
+        totalSumIcecream = icecream * productCountIcecream;
+        printf("Enter one product number: \n tamatoes (1); \n flour (2); \n yogurt (3); \n icecream (4); \n candy (5); \n lolipop (6) \n Enter: '0' to see your total! ");
+        scanf("%d", &product);
+    }
+
+    if(product == 6)
+    {
+        printf("Enter quantity: ");
+        scanf("%d", &productCountLolipop);
+        
+        totalSumLolipop = lolipop * productCountLolipop;
+        printf("Enter one product number: \n tamatoes (1); \n flour (2); \n yogurt (3); \n icecream (4); \n candy (5); \n lolipop (6) \n Enter: '0' to see your total! ");
+        scanf("%d", &product);
+    }
+
+    if(product == 0)
+        totalSum = totalSumTomatoes + totalSumFlour + totalSumCandy + totalSumIcecream + totalSumYogurt + totalSumLolipop;
+        printf("Your total is: %f lv", totalSum);    
+    
+    return 0;    
+}
